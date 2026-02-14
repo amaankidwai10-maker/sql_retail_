@@ -95,11 +95,13 @@ GROUP BY 1
 	AVG(age) as avg_age
     FROM retail_sales 
     WHERE category = 'beauty';
+```
 
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
  SELECT * FROM retail_sales
  WHERE total_sale > 1000;
+```
 
 6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
 ```sql
@@ -110,7 +112,7 @@ GROUP BY 1
 FROM retail_sales
 GROUP BY category,gender
 ORDER BY 1;
-
+```
 
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
 ```sql
@@ -122,7 +124,7 @@ SELECT
 FROM retail_sales
 GROUP BY 1,2
 ORDER BY 1,3 DESC;
-
+```
 
 8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
 ```sql
@@ -133,6 +135,7 @@ FROM retail_sales
 GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 5;
+```
 
 9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
 ```sql
@@ -162,7 +165,7 @@ SELECT
 	COUNT(*) AS total_orders
 FROM hourly_sale
 GROUP BY shift
-
+```
 
 
 ## Findings
